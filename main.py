@@ -1,3 +1,6 @@
+import torch
+from chunk import ThreeBodySystem, simulate_with_chaos, plot_positions, animate_positions
+
 if __name__ == "__main__":
     masses = torch.tensor([5.972e24, 1.989e30, 7.348e22])  # Earth, Sun, Moon
     initial_positions = torch.tensor([
